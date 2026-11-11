@@ -216,5 +216,41 @@ header :last-child {
 }
 
 footer {
-  padding: 44px 165px 51px;
+  padding-block: 44px 51px;
+  padding-inline: clamp(2rem, 5vw, 8rem);
+  background-color: #f5f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+@media (max-width: 700px) {
+  footer {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .icons {
+    flex-direction: column;
+  }
 }
