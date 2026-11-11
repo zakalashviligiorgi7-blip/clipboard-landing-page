@@ -205,3 +205,16 @@ header :last-child {
   font-weight: 400;
   line-height: 30px;
 }
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 165px));
+  justify-content: center;
+  column-gap: 112px;
+  row-gap: 57px;
+  margin-bottom: 225px;
+}
+
+footer {
+  padding: 44px 165px 51px;
+}
