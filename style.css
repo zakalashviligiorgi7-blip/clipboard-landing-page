@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,4 +14,69 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: Arial, sans-serif;
+  max-width: 1440px;
+  margin-inline: auto;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  height: 263px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+
+header :first-child {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header :last-child {
+  position: relative;
+  top: -20px;
+}
+
+.history {
+  max-width: 730px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.history :first-child {
+  color: #4c545c;
+  font-size: 46px;
+}
+
+.history :nth-child(2) {
+  margin-block: 16px 48px;
+  font-size: 20px;
+  color: #9eabb2;
+  font-weight: 400;
+  letter-spacing: 0.15;
+}
+
+.btn {
+  padding: 13px 36px;
+  font-size: 18px !important;
+  color: white !important;
+  border-radius: 28px;
+  border: none;
+  margin-left: 16px;
+}
+
+.btn-green {
+  background-color: #26bba4;
+  box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.15) inset,
+    0 10px 20px 0 rgba(137, 229, 199, 0.5);
+}
+
+.btn-blue {
+  background-color: #6174ff;
+  box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.15) inset,
+    0 10px 20px 0 rgba(0, 0, 0, 0.1);
 }
